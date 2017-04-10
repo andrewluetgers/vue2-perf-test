@@ -1,8 +1,6 @@
 # vue-perf-test
 A simple perf test using Vue.js
 
-This implementation is strangely 10x slower than the [vue.js 1.x](https://github.com/andrewluetgers/vue-perf-test) implementation, it is unclear why.
-
 <img width="504" alt="screen shot 2015-12-20 at 12 13 18 pm" src="https://cloud.githubusercontent.com/assets/232036/11919264/5ba5634a-a713-11e5-8179-b06030b16dbd.png">
 
 
@@ -21,7 +19,7 @@ You can start or stop the process and pick different sizes for the grid. Which a
 The 100 x 100 grid is the main show here and illustrates weather or not the change observation, subscription and rendering mechanisms all scale well or not.
 
 # Other Implementations
- * [vue.js 1.x](https://github.com/andrewluetgers/vue-perf-test)
+ * [vue.js 1.x](https://github.com/andrewluetgers/vue-perf-test) see discussion of [differences between Vue 1 and 2](https://github.com/vuejs/vue/issues/5409)
  * [React + MobX](https://github.com/andrewluetgers/mobx-react-perf-test)
  * [Omnistate](https://github.com/andrewluetgers/omnistate)
  * [vanilla-js](http://jsfiddle.net/zme8f7k8/5/)
