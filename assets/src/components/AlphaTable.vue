@@ -1,16 +1,16 @@
-
 <template>
     <div id="alphaTable">
-        <ul v-for="row in layout" track-by="$index">
-            <li v-for="cell in row" track-by="$index" :style="{background: cell.active ? cell.color : '#444444'}">
-                {{cell.letter}}
-            </li>
-        </ul>
+        <ul key="$index" v-for="row in layout">
+			<alpha-cell v-for="cell in row" :cell="cell"></alpha-cell>
+		</ul>
     </div>
 </template>
 
 <script>
-    export default {
+	import AlphaCell from './AlphaCell.vue'
+
+	export default {
+		components: {AlphaCell},
         props: ['layout']
     }
 </script>

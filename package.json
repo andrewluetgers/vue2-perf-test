@@ -4,7 +4,7 @@
   "author": "andrew luetgers <andrew.luetgers@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot",
+    "dev": "NODE_ENV=production webpack-dev-server --inline --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
